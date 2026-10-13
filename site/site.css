@@ -79,3 +79,5 @@ footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:4px 0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .tw{overflow-x:auto;margin:14px 0}.prose table{border-collapse:collapse;width:100%;font-size:.95em}.prose th,.prose td{border:1px solid #d5dbe6;padding:8px 10px;text-align:left;vertical-align:top}.prose th{background:#eef2f9}
+
+.gbar nav a,.gbar .gb-home{display:inline-flex;align-items:center;min-height:44px}
