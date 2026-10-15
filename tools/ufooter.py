@@ -10,21 +10,21 @@ import re, sys, os
 
 SELLER = "IT Services by Rajat Agarwal"
 ADDR = "B-1105, Shipra Krishna Vista, Indirapuram, Ghaziabad, Uttar Pradesh, 201014, India"
-EMAIL = "rajatsiroffice@gmail.com"
+EMAIL = "hello@corporatetambola.com"
 PHONE_TXT, PHONE_TEL = "(+91) 96503 97480", "+919650397480"
 
 GAMES = [
-    ("Corporate Tambola", "https://corporate-tambola.pages.dev"),
-    ("Corporate Bingo", "https://corporate-bingo.pages.dev"),
-    ("Corporate Tic Tac Toe", "https://corporate-tic-tac-toe.pages.dev"),
-    ("Corporate Snakes and Ladders", "https://corporate-snakes-and-ladders.pages.dev"),
-    ("Corporate Luck by Chance", "https://corporate-luck-by-chance.pages.dev"),
+    ("Corporate Tambola", "https://corporatetambola.com"),
+    ("Corporate Bingo", "https://bingo.corporatetambola.com"),
+    ("Corporate Tic Tac Toe", "https://tictactoe.corporatetambola.com"),
+    ("Corporate Snakes and Ladders", "https://snakes.corporatetambola.com"),
+    ("Corporate Luck by Chance", "https://luck.corporatetambola.com"),
 ]
 ITS = "https://itservices-rajat-agarwal.pages.dev"
 APP = "https://app.veridian-aios.com"
 APEX = "https://veridian-aios.com/"  # the DPDP product's public home; its own site links here, not to the legacy app host
 COACH = "https://rajat-agarwal-startup-coach.pages.dev"
-IDX = "https://corporate-games.pages.dev"
+IDX = "https://games.corporatetambola.com"
 
 _game_links = lambda: {
     "Home": "/", "Pricing": "/pricing.html", "Demo": "/demo.html", "Brochure": "/brochure.pdf",
@@ -97,7 +97,7 @@ def render(site):
     legal_keys = [k for k in ("Terms", "Legal position", "Privacy", "Sub-processors", "Refund policy", "Shipping and delivery", "Delivery", "Disclaimer", "Data processing") if k in L]
     help_keys = [k for k in ("About", "Contact", "Contact and grievance", "Grievance") if k in L]
     brand = (f'<div><p class="ufb">{s["name"]}</p><p>{s["tag"]}</p><p>A product of {SELLER}.</p>'
-             f'<p><a href="mailto:{EMAIL}">{EMAIL}</a><br><a href="tel:{PHONE_TEL}">{PHONE_TXT}</a></p></div>')
+             f'<p><a href="mailto:{EMAIL}?subject=%5BGames%5D%20">{EMAIL}</a><br><a href="tel:{PHONE_TEL}">{PHONE_TXT}</a></p></div>')
     pay = f'<div class="ufpay"><p class="uft">Payments</p><p>Safe online payment through Razorpay.</p><a href="{L["pay"]}">Test a payment (Rs 1)</a></div>'
     games = "".join(f'<a href="{u}">{n.replace("Corporate ", "")}</a>' for n, u in GAMES)
     other = (f'<a href="{IDX}">All games</a>' + games + f'<a href="{COACH}">Startup Coach</a><a href="{APEX if site == "DPD" else APP}">Veridian DPDP</a>')
