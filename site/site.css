@@ -76,3 +76,4 @@ details p{margin:8px 0 0;color:var(--mute)}
 .tw{overflow-x:auto;margin:14px 0}.prose table{border-collapse:collapse;width:100%;font-size:.95em}.prose th,.prose td{border:1px solid #F0D9AE;padding:8px 10px;text-align:left;vertical-align:top}.prose th{background:#FFEFD0}
 
 .gbar nav a,.gbar .gb-home{display:inline-flex;align-items:center;min-height:44px}
+.brand img{width:34px;height:34px;flex:none;border-radius:22%;display:block}

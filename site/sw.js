@@ -1,6 +1,6 @@
 /* Corporate Games: service worker. Pages you have opened open again without internet; anything else shows the offline page.
    Never touches other websites (the games themselves are separate sites). */
-const V = "idx-v1";
+const V = "idx-v2";
 const CORE = ["/offline.html", "/site.css", "/site.js", "/favicon.svg", "/img/icon-192.png", "/fonts/Inter-normal-400.woff2", "/fonts/Fraunces-normal-500-700.woff2"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(V).then((c) => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== V).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
