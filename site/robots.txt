@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+
 # Not for AI training (see the terms: Protection of the product).
 User-agent: GPTBot
 User-agent: ClaudeBot
