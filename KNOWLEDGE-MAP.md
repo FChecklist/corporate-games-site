@@ -62,3 +62,6 @@ One portal where every product shows its AI-facing API on one page, built step b
 - Check this map before building anything, so you do not rebuild what another repository already does.
 
 Other older repositories (jyotish-*, veridian-brain, veridian-ai-os, veridian-bridge and similar) are outside this map unless their own README says otherwise. Ask BOSS.
+
+## Change note, 25 Nov 2026
+Small mark १३९ added at the top centre of every portal page (markup in each page, CSS in `site/site.css`), guarded by `test/mark139.test.js`. No version file exists in this repo.
