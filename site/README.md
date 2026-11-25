@@ -9,3 +9,5 @@ Deploy (free Cloudflare Pages), only after the owner says go:
     wrangler pages deploy site --project-name corporate-games --branch main
 
 Look, install and footer (14 Oct 2026): bright palette (saffron, teal, sky blue, cream); installable (`manifest.webmanifest`, icons and the social image in `img/`, `sw.js` + `offline.html`, `pwa.js`); every page carries the uniform footer (`python tools/ufooter.py IDX site`, see `tools/`). Check before deploying: `node tools/check-site.mjs site --its C:\ct\itservices-site\dist`.
+
+Mark १३९ (25 Nov 2026, owner order): every page carries `<div class="mark139">` first in `<body>`; its CSS is at the end of `site.css`. Guard test: `bun test` (`test/mark139.test.js`). The repo keeps no version number (the live one is /version.json, made at deploy); the social picture `img/og.png` is a raster and was not changed.
